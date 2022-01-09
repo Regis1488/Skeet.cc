@@ -1,4 +1,10 @@
-local AimbotGui = Instance.new("Frame")
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local BaseGui = Instance.new("ScreenGui")
+local MainGui = Instance.new("Frame")
 local Frame = Instance.new("Frame")
 local Aimbot = Instance.new("ImageButton")
 local AntiAim = Instance.new("ImageButton")
@@ -11,12 +17,25 @@ local Barre = Instance.new("ImageButton")
 local Barre2 = Instance.new("ImageButton")
 local Barre3 = Instance.new("ImageButton")
 local Barre4 = Instance.new("ImageButton")
+local AimbotGui = Instance.new("Frame")
 local Frame_2 = Instance.new("Frame")
+local Aimbot_2 = Instance.new("ImageButton")
+local AntiAim_2 = Instance.new("ImageButton")
+local Aimbot_Weapons_2 = Instance.new("ImageButton")
+local ESP_2 = Instance.new("ImageButton")
+local Config_2 = Instance.new("ImageButton")
+local SkinChanger_2 = Instance.new("ImageButton")
+local Account_2 = Instance.new("ImageButton")
+local Barre_2 = Instance.new("ImageButton")
+local Barre2_2 = Instance.new("ImageButton")
+local Barre3_2 = Instance.new("ImageButton")
+local Barre4_2 = Instance.new("ImageButton")
 local Frame_3 = Instance.new("Frame")
 local Frame_4 = Instance.new("Frame")
 local Frame_5 = Instance.new("Frame")
 local Frame_6 = Instance.new("Frame")
 local Frame_7 = Instance.new("Frame")
+local Frame_8 = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
 local Button2 = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
@@ -37,83 +56,88 @@ local UIListLayout = Instance.new("UIListLayout")
 
 --Properties:
 
-AimbotGui.Name = "AimbotGui"
-AimbotGui.Parent = game.StarterGui.BaseGui
-AimbotGui.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
-AimbotGui.Position = UDim2.new(0.162868202, 0, 0.072392635, 0)
-AimbotGui.Size = UDim2.new(0, 851, 0, 696)
+BaseGui.Name = "BaseGui"
+BaseGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
-Frame.Parent = AimbotGui
+MainGui.Name = "MainGui"
+MainGui.Parent = BaseGui
+MainGui.Active = true
+MainGui.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+MainGui.Position = UDim2.new(0.272671193, 0, 0.107975461, 0)
+MainGui.Size = UDim2.new(0, 851, 0, 696)
+MainGui.Visible = false
+
+Frame.Parent = MainGui
 Frame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
 Frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Frame.Position = UDim2.new(0.108108111, 0, 0.00574712642, 0)
+Frame.Position = UDim2.new(0.131609872, 0, 0.0114942528, 0)
 Frame.Size = UDim2.new(0, 3, 0, 688)
 
 Aimbot.Name = "Aimbot"
-Aimbot.Parent = AimbotGui
+Aimbot.Parent = MainGui
 Aimbot.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
 Aimbot.BackgroundTransparency = 1.000
 Aimbot.Position = UDim2.new(0, 0, 0.0114942528, 0)
-Aimbot.Size = UDim2.new(0, 92, 0, 90)
+Aimbot.Size = UDim2.new(0, 106, 0, 90)
 Aimbot.Modal = true
 Aimbot.Image = "http://www.roblox.com/asset/?id=8488969751"
 
 AntiAim.Name = "AntiAim"
-AntiAim.Parent = AimbotGui
+AntiAim.Parent = MainGui
 AntiAim.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
 AntiAim.BackgroundTransparency = 1.000
-AntiAim.Position = UDim2.new(0, 0, 0.133620679, 0)
-AntiAim.Size = UDim2.new(0, 92, 0, 88)
+AntiAim.Position = UDim2.new(0, 0, 0.12931034, 0)
+AntiAim.Size = UDim2.new(0, 106, 0, 88)
 AntiAim.Modal = true
 AntiAim.Image = "http://www.roblox.com/asset/?id=8489115449"
 
 Aimbot_Weapons.Name = "Aimbot_Weapons"
-Aimbot_Weapons.Parent = AimbotGui
+Aimbot_Weapons.Parent = MainGui
 Aimbot_Weapons.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
 Aimbot_Weapons.BackgroundTransparency = 1.000
-Aimbot_Weapons.Position = UDim2.new(0, 0, 0.255747139, 0)
-Aimbot_Weapons.Size = UDim2.new(0, 92, 0, 93)
+Aimbot_Weapons.Position = UDim2.new(0.00235017622, 0, 0.255747139, 0)
+Aimbot_Weapons.Size = UDim2.new(0, 104, 0, 102)
 Aimbot_Weapons.Modal = true
 Aimbot_Weapons.Image = "http://www.roblox.com/asset/?id=8489152014"
 
 ESP.Name = "ESP"
-ESP.Parent = AimbotGui
+ESP.Parent = MainGui
 ESP.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
 ESP.BackgroundTransparency = 1.000
-ESP.Position = UDim2.new(0.00352526433, 0, 0.403735578, 0)
-ESP.Size = UDim2.new(0, 89, 0, 100)
+ESP.Position = UDim2.new(0.00352526433, 0, 0.403735608, 0)
+ESP.Size = UDim2.new(0, 106, 0, 100)
 ESP.Modal = true
 ESP.Image = "http://www.roblox.com/asset/?id=8489179348"
 
 Config.Name = "Config"
-Config.Parent = AimbotGui
+Config.Parent = MainGui
 Config.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
 Config.BackgroundTransparency = 1.000
-Config.Position = UDim2.new(0.00352526433, 0, 0.567528665, 0)
-Config.Size = UDim2.new(0, 78, 0, 78)
+Config.Position = UDim2.new(0.00235017622, 0, 0.547413766, 0)
+Config.Size = UDim2.new(0, 106, 0, 100)
 Config.Modal = true
 Config.Image = "http://www.roblox.com/asset/?id=8489207908"
 
 SkinChanger.Name = "SkinChanger"
-SkinChanger.Parent = AimbotGui
+SkinChanger.Parent = MainGui
 SkinChanger.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
 SkinChanger.BackgroundTransparency = 1.000
 SkinChanger.Position = UDim2.new(0.00235017622, 0, 0.691091955, 0)
-SkinChanger.Size = UDim2.new(0, 90, 0, 100)
+SkinChanger.Size = UDim2.new(0, 106, 0, 100)
 SkinChanger.Modal = true
 SkinChanger.Image = "http://www.roblox.com/asset/?id=8489232807"
 
 Account.Name = "Account"
-Account.Parent = AimbotGui
+Account.Parent = MainGui
 Account.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
 Account.BackgroundTransparency = 1.000
 Account.Position = UDim2.new(0, 0, 0.834770143, 0)
-Account.Size = UDim2.new(0, 92, 0, 115)
+Account.Size = UDim2.new(0, 106, 0, 115)
 Account.Modal = true
 Account.Image = "http://www.roblox.com/asset/?id=8489255191"
 
 Barre.Name = "Barre"
-Barre.Parent = AimbotGui
+Barre.Parent = MainGui
 Barre.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
 Barre.BackgroundTransparency = 1.000
 Barre.Size = UDim2.new(0, 153, 0, 8)
@@ -121,7 +145,7 @@ Barre.Modal = true
 Barre.Image = "http://www.roblox.com/asset/?id=8489388246"
 
 Barre2.Name = "Barre2"
-Barre2.Parent = AimbotGui
+Barre2.Parent = MainGui
 Barre2.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
 Barre2.BackgroundTransparency = 1.000
 Barre2.Position = UDim2.new(0.179788485, 0, 0, 0)
@@ -130,7 +154,7 @@ Barre2.Modal = true
 Barre2.Image = "http://www.roblox.com/asset/?id=8489406575"
 
 Barre3.Name = "Barre3"
-Barre3.Parent = AimbotGui
+Barre3.Parent = MainGui
 Barre3.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
 Barre3.BackgroundTransparency = 1.000
 Barre3.Position = UDim2.new(0.329024673, 0, 0, 0)
@@ -139,7 +163,7 @@ Barre3.Modal = true
 Barre3.Image = "http://www.roblox.com/asset/?id=8489435671"
 
 Barre4.Name = "Barre4"
-Barre4.Parent = AimbotGui
+Barre4.Parent = MainGui
 Barre4.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
 Barre4.BackgroundTransparency = 1.000
 Barre4.Position = UDim2.new(0.673325479, 0, 0, 0)
@@ -147,35 +171,145 @@ Barre4.Size = UDim2.new(0, 278, 0, 8)
 Barre4.Modal = true
 Barre4.Image = "http://www.roblox.com/asset/?id=8489450723"
 
+AimbotGui.Name = "AimbotGui"
+AimbotGui.Parent = BaseGui
+AimbotGui.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+AimbotGui.Position = UDim2.new(0.162868202, 0, 0.072392635, 0)
+AimbotGui.Size = UDim2.new(0, 851, 0, 696)
+
 Frame_2.Parent = AimbotGui
-Frame_2.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Frame_2.Position = UDim2.new(0.183313742, 0, 0.0632183924, 0)
-Frame_2.Size = UDim2.new(0, 10, 0, 3)
+Frame_2.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Frame_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Frame_2.Position = UDim2.new(0.108108111, 0, 0.00574712642, 0)
+Frame_2.Size = UDim2.new(0, 3, 0, 688)
+
+Aimbot_2.Name = "Aimbot"
+Aimbot_2.Parent = AimbotGui
+Aimbot_2.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Aimbot_2.BackgroundTransparency = 1.000
+Aimbot_2.Position = UDim2.new(0, 0, 0.0114942528, 0)
+Aimbot_2.Size = UDim2.new(0, 92, 0, 90)
+Aimbot_2.Modal = true
+Aimbot_2.Image = "http://www.roblox.com/asset/?id=8488969751"
+
+AntiAim_2.Name = "AntiAim"
+AntiAim_2.Parent = AimbotGui
+AntiAim_2.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+AntiAim_2.BackgroundTransparency = 1.000
+AntiAim_2.Position = UDim2.new(0, 0, 0.133620679, 0)
+AntiAim_2.Size = UDim2.new(0, 92, 0, 88)
+AntiAim_2.Modal = true
+AntiAim_2.Image = "http://www.roblox.com/asset/?id=8489115449"
+
+Aimbot_Weapons_2.Name = "Aimbot_Weapons"
+Aimbot_Weapons_2.Parent = AimbotGui
+Aimbot_Weapons_2.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Aimbot_Weapons_2.BackgroundTransparency = 1.000
+Aimbot_Weapons_2.Position = UDim2.new(0, 0, 0.255747139, 0)
+Aimbot_Weapons_2.Size = UDim2.new(0, 92, 0, 93)
+Aimbot_Weapons_2.Modal = true
+Aimbot_Weapons_2.Image = "http://www.roblox.com/asset/?id=8489152014"
+
+ESP_2.Name = "ESP"
+ESP_2.Parent = AimbotGui
+ESP_2.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+ESP_2.BackgroundTransparency = 1.000
+ESP_2.Position = UDim2.new(0.00352526433, 0, 0.403735578, 0)
+ESP_2.Size = UDim2.new(0, 89, 0, 100)
+ESP_2.Modal = true
+ESP_2.Image = "http://www.roblox.com/asset/?id=8489179348"
+
+Config_2.Name = "Config"
+Config_2.Parent = AimbotGui
+Config_2.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Config_2.BackgroundTransparency = 1.000
+Config_2.Position = UDim2.new(0.00352526433, 0, 0.567528665, 0)
+Config_2.Size = UDim2.new(0, 78, 0, 78)
+Config_2.Modal = true
+Config_2.Image = "http://www.roblox.com/asset/?id=8489207908"
+
+SkinChanger_2.Name = "SkinChanger"
+SkinChanger_2.Parent = AimbotGui
+SkinChanger_2.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+SkinChanger_2.BackgroundTransparency = 1.000
+SkinChanger_2.Position = UDim2.new(0.00235017622, 0, 0.691091955, 0)
+SkinChanger_2.Size = UDim2.new(0, 90, 0, 100)
+SkinChanger_2.Modal = true
+SkinChanger_2.Image = "http://www.roblox.com/asset/?id=8489232807"
+
+Account_2.Name = "Account"
+Account_2.Parent = AimbotGui
+Account_2.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Account_2.BackgroundTransparency = 1.000
+Account_2.Position = UDim2.new(0, 0, 0.834770143, 0)
+Account_2.Size = UDim2.new(0, 92, 0, 115)
+Account_2.Modal = true
+Account_2.Image = "http://www.roblox.com/asset/?id=8489255191"
+
+Barre_2.Name = "Barre"
+Barre_2.Parent = AimbotGui
+Barre_2.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Barre_2.BackgroundTransparency = 1.000
+Barre_2.Size = UDim2.new(0, 153, 0, 8)
+Barre_2.Modal = true
+Barre_2.Image = "http://www.roblox.com/asset/?id=8489388246"
+
+Barre2_2.Name = "Barre2"
+Barre2_2.Parent = AimbotGui
+Barre2_2.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Barre2_2.BackgroundTransparency = 1.000
+Barre2_2.Position = UDim2.new(0.179788485, 0, 0, 0)
+Barre2_2.Size = UDim2.new(0, 127, 0, 8)
+Barre2_2.Modal = true
+Barre2_2.Image = "http://www.roblox.com/asset/?id=8489406575"
+
+Barre3_2.Name = "Barre3"
+Barre3_2.Parent = AimbotGui
+Barre3_2.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Barre3_2.BackgroundTransparency = 1.000
+Barre3_2.Position = UDim2.new(0.329024673, 0, 0, 0)
+Barre3_2.Size = UDim2.new(0, 293, 0, 8)
+Barre3_2.Modal = true
+Barre3_2.Image = "http://www.roblox.com/asset/?id=8489435671"
+
+Barre4_2.Name = "Barre4"
+Barre4_2.Parent = AimbotGui
+Barre4_2.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Barre4_2.BackgroundTransparency = 1.000
+Barre4_2.Position = UDim2.new(0.673325479, 0, 0, 0)
+Barre4_2.Size = UDim2.new(0, 278, 0, 8)
+Barre4_2.Modal = true
+Barre4_2.Image = "http://www.roblox.com/asset/?id=8489450723"
 
 Frame_3.Parent = AimbotGui
 Frame_3.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Frame_3.Position = UDim2.new(0.179788485, 0, 0.0632183924, 0)
-Frame_3.Size = UDim2.new(0, 3, 0, 571)
+Frame_3.Position = UDim2.new(0.183313742, 0, 0.0632183924, 0)
+Frame_3.Size = UDim2.new(0, 10, 0, 3)
 
 Frame_4.Parent = AimbotGui
 Frame_4.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Frame_4.Position = UDim2.new(0.183313757, 0, 0.879310369, 0)
-Frame_4.Size = UDim2.new(0, 220, 0, 3)
+Frame_4.Position = UDim2.new(0.179788485, 0, 0.0632183924, 0)
+Frame_4.Size = UDim2.new(0, 3, 0, 571)
 
 Frame_5.Parent = AimbotGui
 Frame_5.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Frame_5.Position = UDim2.new(0.438307881, 0, 0.0675287396, 0)
-Frame_5.Size = UDim2.new(0, 3, 0, 571)
+Frame_5.Position = UDim2.new(0.183313757, 0, 0.879310369, 0)
+Frame_5.Size = UDim2.new(0, 220, 0, 3)
 
 Frame_6.Parent = AimbotGui
 Frame_6.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Frame_6.Position = UDim2.new(0.32432431, 0, 0.063218385, 0)
-Frame_6.Size = UDim2.new(0, 100, 0, 3)
+Frame_6.Position = UDim2.new(0.438307881, 0, 0.0675287396, 0)
+Frame_6.Size = UDim2.new(0, 3, 0, 571)
 
 Frame_7.Parent = AimbotGui
 Frame_7.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Frame_7.Position = UDim2.new(0.253819048, 0, 0.0632183924, 0)
-Frame_7.Size = UDim2.new(0, 60, 0, 3)
+Frame_7.Position = UDim2.new(0.32432431, 0, 0.063218385, 0)
+Frame_7.Size = UDim2.new(0, 100, 0, 3)
+
+Frame_8.Parent = AimbotGui
+Frame_8.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Frame_8.Position = UDim2.new(0.253819048, 0, 0.0632183924, 0)
+Frame_8.Size = UDim2.new(0, 60, 0, 3)
 
 TextButton.Parent = AimbotGui
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -344,16 +478,71 @@ UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 
 -- Scripts:
 
-local function FWCS_fake_script() -- Aimbot.LocalScript 
+local function DNTEOES_fake_script() -- Aimbot.LocalScript 
 	local script = Instance.new('LocalScript', Aimbot)
+
+	local gui = script.Parent.Parent.Parent.MainGui
+	local Aimbot = script.Parent.Parent.Parent.AimbotGui
+	script.Parent.MouseButton1Click:Connect(function()
+		gui.Visible = false
+		Aimbot.Visible = true
+	end)
+end
+coroutine.wrap(DNTEOES_fake_script)()
+local function EZCLFU_fake_script() -- MainGui.LocalScript 
+	local script = Instance.new('LocalScript', MainGui)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(EZCLFU_fake_script)()
+local function HLLRZ_fake_script() -- Aimbot_2.LocalScript 
+	local script = Instance.new('LocalScript', Aimbot_2)
 
 	local gui = script.Parent.Parent.Parent.Parent.BaseGui
 	script.Parent.MouseButton1Click:Connect(function()
 		gui.Enabled = false
 	end)
 end
-coroutine.wrap(FWCS_fake_script)()
-local function DSTTRYI_fake_script() -- AimbotGui.LocalScript 
+coroutine.wrap(HLLRZ_fake_script)()
+local function NSMXLW_fake_script() -- AimbotGui.LocalScript 
 	local script = Instance.new('LocalScript', AimbotGui)
 
 	
@@ -397,8 +586,8 @@ local function DSTTRYI_fake_script() -- AimbotGui.LocalScript
 		end
 	end)
 end
-coroutine.wrap(DSTTRYI_fake_script)()
-local function CEOSUVW_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(NSMXLW_fake_script)()
+local function MFJQEUS_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local userInputService = game:GetService("UserInputService")
@@ -411,8 +600,8 @@ local function CEOSUVW_fake_script() -- TextButton.LocalScript
 	
 	
 end
-coroutine.wrap(CEOSUVW_fake_script)()
-local function KAHHM_fake_script() -- Button2.LocalScript 
+coroutine.wrap(MFJQEUS_fake_script)()
+local function TBWHJG_fake_script() -- Button2.LocalScript 
 	local script = Instance.new('LocalScript', Button2)
 
 	local on = 0
@@ -428,8 +617,8 @@ local function KAHHM_fake_script() -- Button2.LocalScript
 	
 	end)
 end
-coroutine.wrap(KAHHM_fake_script)()
-local function TMYTZY_fake_script() -- Cycle.LocalScript 
+coroutine.wrap(TBWHJG_fake_script)()
+local function XHPVA_fake_script() -- Cycle.LocalScript 
 	local script = Instance.new('LocalScript', Cycle)
 
 	local lmao = script.Parent.Parent.Parent.FrameBase.Cycle
@@ -440,8 +629,8 @@ local function TMYTZY_fake_script() -- Cycle.LocalScript
 		frameIss.Visible = false
 	end)
 end
-coroutine.wrap(TMYTZY_fake_script)()
-local function EIXU_fake_script() -- Cycle2.LocalScript 
+coroutine.wrap(XHPVA_fake_script)()
+local function POHPBXV_fake_script() -- Cycle2.LocalScript 
 	local script = Instance.new('LocalScript', Cycle2)
 
 	local lmao2 = script.Parent.Parent.Parent.FrameBase.Cycle
@@ -452,8 +641,8 @@ local function EIXU_fake_script() -- Cycle2.LocalScript
 		frameIss2.Visible = false
 	end)
 end
-coroutine.wrap(EIXU_fake_script)()
-local function YGWTR_fake_script() -- Cycle3.LocalScript 
+coroutine.wrap(POHPBXV_fake_script)()
+local function CLFJKW_fake_script() -- Cycle3.LocalScript 
 	local script = Instance.new('LocalScript', Cycle3)
 
 	local lmao3 = script.Parent.Parent.Parent.FrameBase.Cycle
@@ -464,8 +653,8 @@ local function YGWTR_fake_script() -- Cycle3.LocalScript
 		frameIss3.Visible = false
 	end)
 end
-coroutine.wrap(YGWTR_fake_script)()
-local function FBKC_fake_script() -- Cycle4.LocalScript 
+coroutine.wrap(CLFJKW_fake_script)()
+local function HATWQTF_fake_script() -- Cycle4.LocalScript 
 	local script = Instance.new('LocalScript', Cycle4)
 
 	local lmao4 = script.Parent.Parent.Parent.FrameBase.Cycle
@@ -476,8 +665,8 @@ local function FBKC_fake_script() -- Cycle4.LocalScript
 		frameIss4.Visible = false
 	end)
 end
-coroutine.wrap(FBKC_fake_script)()
-local function KOLUDF_fake_script() -- Cycle5.LocalScript 
+coroutine.wrap(HATWQTF_fake_script)()
+local function UKKP_fake_script() -- Cycle5.LocalScript 
 	local script = Instance.new('LocalScript', Cycle5)
 
 	local lmao6 = script.Parent.Parent.Parent.FrameBase.Cycle
@@ -488,8 +677,8 @@ local function KOLUDF_fake_script() -- Cycle5.LocalScript
 		frameIss6.Visible = false
 	end)
 end
-coroutine.wrap(KOLUDF_fake_script)()
-local function DGYFZB_fake_script() -- Cycle6.LocalScript 
+coroutine.wrap(UKKP_fake_script)()
+local function UAOWE_fake_script() -- Cycle6.LocalScript 
 	local script = Instance.new('LocalScript', Cycle6)
 
 	local lmao6 = script.Parent.Parent.Parent.FrameBase.Cycle
@@ -500,8 +689,8 @@ local function DGYFZB_fake_script() -- Cycle6.LocalScript
 		frameIss6.Visible = false
 	end)
 end
-coroutine.wrap(DGYFZB_fake_script)()
-local function EYPRVTP_fake_script() -- Cycle7.LocalScript 
+coroutine.wrap(UAOWE_fake_script)()
+local function GKDX_fake_script() -- Cycle7.LocalScript 
 	local script = Instance.new('LocalScript', Cycle7)
 
 	local lmao7 = script.Parent.Parent.Parent.FrameBase.Cycle
@@ -512,8 +701,8 @@ local function EYPRVTP_fake_script() -- Cycle7.LocalScript
 		frameIss7.Visible = false
 	end)
 end
-coroutine.wrap(EYPRVTP_fake_script)()
-local function YOSO_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(GKDX_fake_script)()
+local function PVLB_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	local iss = script.Parent.Parent.Cycle
@@ -616,4 +805,4 @@ local function YOSO_fake_script() -- ImageButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YOSO_fake_script)()
+coroutine.wrap(PVLB_fake_script)()
