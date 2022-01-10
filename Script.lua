@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local BaseGui = Instance.new("ScreenGui")
 local MainGui = Instance.new("Frame")
 local Frame = Instance.new("Frame")
@@ -53,8 +48,19 @@ local FrameBase = Instance.new("Frame")
 local Cycle_2 = Instance.new("TextButton")
 local ImageButton = Instance.new("ImageButton")
 local UIListLayout = Instance.new("UIListLayout")
+local Target = Instance.new("TextLabel")
+local FrameBaseTarget = Instance.new("Frame")
+local Head = Instance.new("TextButton")
+local ImageButton_2 = Instance.new("ImageButton")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local FrameTarget = Instance.new("Frame")
+local Arms = Instance.new("TextButton")
+local Chest = Instance.new("TextButton")
+local Feet = Instance.new("TextButton")
+local Head_2 = Instance.new("TextButton")
+local Legs = Instance.new("TextButton")
+local Stomach = Instance.new("TextButton")
 
---Properties:
 
 BaseGui.Name = "BaseGui"
 BaseGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -174,7 +180,7 @@ Barre4.Image = "http://www.roblox.com/asset/?id=8489450723"
 AimbotGui.Name = "AimbotGui"
 AimbotGui.Parent = BaseGui
 AimbotGui.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
-AimbotGui.Position = UDim2.new(0.162868202, 0, 0.072392635, 0)
+AimbotGui.Position = UDim2.new(0.169653594, 0, 0.0515337437, 0)
 AimbotGui.Size = UDim2.new(0, 851, 0, 696)
 
 Frame_2.Parent = AimbotGui
@@ -476,9 +482,121 @@ ImageButton.Image = "http://www.roblox.com/asset/?id=8496580942"
 UIListLayout.Parent = ImageButton
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 
+Target.Name = "Target"
+Target.Parent = AimbotGui
+Target.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Target.BackgroundTransparency = 1.000
+Target.Position = UDim2.new(0.183313742, 0, 0.227788091, 0)
+Target.Size = UDim2.new(0, 163, 0, 31)
+Target.Font = Enum.Font.SourceSans
+Target.Text = "Target Selection"
+Target.TextColor3 = Color3.fromRGB(255, 255, 255)
+Target.TextSize = 14.000
+
+FrameBaseTarget.Name = "FrameBaseTarget"
+FrameBaseTarget.Parent = AimbotGui
+FrameBaseTarget.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+FrameBaseTarget.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameBaseTarget.Position = UDim2.new(0.210359633, 0, 0.271534085, 0)
+FrameBaseTarget.Size = UDim2.new(0, 154, 0, 23)
+
+Head.Name = "Head"
+Head.Parent = FrameBaseTarget
+Head.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Head.BackgroundTransparency = 1.000
+Head.Position = UDim2.new(0.0804520696, 0, 0.161327198, 0)
+Head.Size = UDim2.new(0, 79, 0, 18)
+Head.Font = Enum.Font.SourceSans
+Head.Text = "Head"
+Head.TextColor3 = Color3.fromRGB(255, 255, 255)
+Head.TextSize = 14.000
+
+ImageButton_2.Parent = FrameBaseTarget
+ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton_2.BackgroundTransparency = 1.000
+ImageButton_2.Position = UDim2.new(0.793866038, 0, -0.08851026, 0)
+ImageButton_2.Size = UDim2.new(0, 28, 0, 28)
+ImageButton_2.Image = "http://www.roblox.com/asset/?id=8496580942"
+
+UIListLayout_2.Parent = ImageButton_2
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+FrameTarget.Name = "FrameTarget"
+FrameTarget.Parent = AimbotGui
+FrameTarget.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+FrameTarget.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameTarget.Position = UDim2.new(0.210359633, 0, 0.318947881, 0)
+FrameTarget.Size = UDim2.new(0, 154, 0, 190)
+
+Arms.Name = "Arms"
+Arms.Parent = FrameTarget
+Arms.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Arms.BackgroundTransparency = 1.000
+Arms.Position = UDim2.new(0.0157674812, 0, 0.480929404, 0)
+Arms.Size = UDim2.new(0, 152, 0, 28)
+Arms.Font = Enum.Font.SourceSans
+Arms.Text = "Arms"
+Arms.TextColor3 = Color3.fromRGB(255, 255, 255)
+Arms.TextSize = 15.000
+
+Chest.Name = "Chest"
+Chest.Parent = FrameTarget
+Chest.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Chest.BackgroundTransparency = 1.000
+Chest.Position = UDim2.new(0.0128954602, 0, 0.172558755, 0)
+Chest.Size = UDim2.new(0, 152, 0, 30)
+Chest.Font = Enum.Font.SourceSans
+Chest.Text = "Chest"
+Chest.TextColor3 = Color3.fromRGB(255, 255, 255)
+Chest.TextSize = 15.000
+
+Feet.Name = "Feet"
+Feet.Parent = FrameTarget
+Feet.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Feet.BackgroundTransparency = 1.000
+Feet.Position = UDim2.new(0.0161218029, 0, 0.804498613, 0)
+Feet.Size = UDim2.new(0, 152, 0, 37)
+Feet.Font = Enum.Font.SourceSans
+Feet.Text = "Feet"
+Feet.TextColor3 = Color3.fromRGB(255, 255, 255)
+Feet.TextSize = 15.000
+
+Head_2.Name = "Head"
+Head_2.Parent = FrameTarget
+Head_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Head_2.BackgroundTransparency = 1.000
+Head_2.Position = UDim2.new(0.00684564793, 0, -0.00384950661, 0)
+Head_2.Size = UDim2.new(0, 152, 0, 33)
+Head_2.Font = Enum.Font.SourceSans
+Head_2.Text = "Head"
+Head_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Head_2.TextSize = 15.000
+
+Legs.Name = "Legs"
+Legs.Parent = FrameTarget
+Legs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Legs.BackgroundTransparency = 1.000
+Legs.Position = UDim2.new(0.0157506373, 0, 0.632150769, 0)
+Legs.Size = UDim2.new(0, 152, 0, 38)
+Legs.Font = Enum.Font.SourceSans
+Legs.Text = "Legs"
+Legs.TextColor3 = Color3.fromRGB(255, 255, 255)
+Legs.TextSize = 15.000
+
+Stomach.Name = "Stomach"
+Stomach.Parent = FrameTarget
+Stomach.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stomach.BackgroundTransparency = 1.000
+Stomach.Position = UDim2.new(0.00638055196, 0, 0.335560858, 0)
+Stomach.Size = UDim2.new(0, 152, 0, 27)
+Stomach.Font = Enum.Font.SourceSans
+Stomach.Text = "Stomach"
+Stomach.TextColor3 = Color3.fromRGB(255, 255, 255)
+Stomach.TextSize = 15.000
+
 -- Scripts:
 
-local function DNTEOES_fake_script() -- Aimbot.LocalScript 
+local function QFTQQDQ_fake_script() -- Aimbot.LocalScript 
 	local script = Instance.new('LocalScript', Aimbot)
 
 	local gui = script.Parent.Parent.Parent.MainGui
@@ -488,8 +606,8 @@ local function DNTEOES_fake_script() -- Aimbot.LocalScript
 		Aimbot.Visible = true
 	end)
 end
-coroutine.wrap(DNTEOES_fake_script)()
-local function EZCLFU_fake_script() -- MainGui.LocalScript 
+coroutine.wrap(QFTQQDQ_fake_script)()
+local function HYMK_fake_script() -- MainGui.LocalScript 
 	local script = Instance.new('LocalScript', MainGui)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -532,8 +650,8 @@ local function EZCLFU_fake_script() -- MainGui.LocalScript
 		end
 	end)
 end
-coroutine.wrap(EZCLFU_fake_script)()
-local function HLLRZ_fake_script() -- Aimbot_2.LocalScript 
+coroutine.wrap(HYMK_fake_script)()
+local function YRKSWMI_fake_script() -- Aimbot_2.LocalScript 
 	local script = Instance.new('LocalScript', Aimbot_2)
 
 	local gui = script.Parent.Parent.Parent.Parent.BaseGui
@@ -541,8 +659,8 @@ local function HLLRZ_fake_script() -- Aimbot_2.LocalScript
 		gui.Enabled = false
 	end)
 end
-coroutine.wrap(HLLRZ_fake_script)()
-local function NSMXLW_fake_script() -- AimbotGui.LocalScript 
+coroutine.wrap(YRKSWMI_fake_script)()
+local function EJIK_fake_script() -- AimbotGui.LocalScript 
 	local script = Instance.new('LocalScript', AimbotGui)
 
 	
@@ -586,8 +704,8 @@ local function NSMXLW_fake_script() -- AimbotGui.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NSMXLW_fake_script)()
-local function MFJQEUS_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(EJIK_fake_script)()
+local function AAUQ_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local userInputService = game:GetService("UserInputService")
@@ -600,8 +718,8 @@ local function MFJQEUS_fake_script() -- TextButton.LocalScript
 	
 	
 end
-coroutine.wrap(MFJQEUS_fake_script)()
-local function TBWHJG_fake_script() -- Button2.LocalScript 
+coroutine.wrap(AAUQ_fake_script)()
+local function DEZHOA_fake_script() -- Button2.LocalScript 
 	local script = Instance.new('LocalScript', Button2)
 
 	local on = 0
@@ -617,8 +735,8 @@ local function TBWHJG_fake_script() -- Button2.LocalScript
 	
 	end)
 end
-coroutine.wrap(TBWHJG_fake_script)()
-local function XHPVA_fake_script() -- Cycle.LocalScript 
+coroutine.wrap(DEZHOA_fake_script)()
+local function KCSSF_fake_script() -- Cycle.LocalScript 
 	local script = Instance.new('LocalScript', Cycle)
 
 	local lmao = script.Parent.Parent.Parent.FrameBase.Cycle
@@ -629,8 +747,8 @@ local function XHPVA_fake_script() -- Cycle.LocalScript
 		frameIss.Visible = false
 	end)
 end
-coroutine.wrap(XHPVA_fake_script)()
-local function POHPBXV_fake_script() -- Cycle2.LocalScript 
+coroutine.wrap(KCSSF_fake_script)()
+local function RATMXB_fake_script() -- Cycle2.LocalScript 
 	local script = Instance.new('LocalScript', Cycle2)
 
 	local lmao2 = script.Parent.Parent.Parent.FrameBase.Cycle
@@ -641,8 +759,8 @@ local function POHPBXV_fake_script() -- Cycle2.LocalScript
 		frameIss2.Visible = false
 	end)
 end
-coroutine.wrap(POHPBXV_fake_script)()
-local function CLFJKW_fake_script() -- Cycle3.LocalScript 
+coroutine.wrap(RATMXB_fake_script)()
+local function HYBJXO_fake_script() -- Cycle3.LocalScript 
 	local script = Instance.new('LocalScript', Cycle3)
 
 	local lmao3 = script.Parent.Parent.Parent.FrameBase.Cycle
@@ -653,8 +771,8 @@ local function CLFJKW_fake_script() -- Cycle3.LocalScript
 		frameIss3.Visible = false
 	end)
 end
-coroutine.wrap(CLFJKW_fake_script)()
-local function HATWQTF_fake_script() -- Cycle4.LocalScript 
+coroutine.wrap(HYBJXO_fake_script)()
+local function WAQV_fake_script() -- Cycle4.LocalScript 
 	local script = Instance.new('LocalScript', Cycle4)
 
 	local lmao4 = script.Parent.Parent.Parent.FrameBase.Cycle
@@ -665,8 +783,8 @@ local function HATWQTF_fake_script() -- Cycle4.LocalScript
 		frameIss4.Visible = false
 	end)
 end
-coroutine.wrap(HATWQTF_fake_script)()
-local function UKKP_fake_script() -- Cycle5.LocalScript 
+coroutine.wrap(WAQV_fake_script)()
+local function UYZS_fake_script() -- Cycle5.LocalScript 
 	local script = Instance.new('LocalScript', Cycle5)
 
 	local lmao6 = script.Parent.Parent.Parent.FrameBase.Cycle
@@ -677,8 +795,8 @@ local function UKKP_fake_script() -- Cycle5.LocalScript
 		frameIss6.Visible = false
 	end)
 end
-coroutine.wrap(UKKP_fake_script)()
-local function UAOWE_fake_script() -- Cycle6.LocalScript 
+coroutine.wrap(UYZS_fake_script)()
+local function JFZN_fake_script() -- Cycle6.LocalScript 
 	local script = Instance.new('LocalScript', Cycle6)
 
 	local lmao6 = script.Parent.Parent.Parent.FrameBase.Cycle
@@ -689,8 +807,8 @@ local function UAOWE_fake_script() -- Cycle6.LocalScript
 		frameIss6.Visible = false
 	end)
 end
-coroutine.wrap(UAOWE_fake_script)()
-local function GKDX_fake_script() -- Cycle7.LocalScript 
+coroutine.wrap(JFZN_fake_script)()
+local function TVYRG_fake_script() -- Cycle7.LocalScript 
 	local script = Instance.new('LocalScript', Cycle7)
 
 	local lmao7 = script.Parent.Parent.Parent.FrameBase.Cycle
@@ -701,8 +819,8 @@ local function GKDX_fake_script() -- Cycle7.LocalScript
 		frameIss7.Visible = false
 	end)
 end
-coroutine.wrap(GKDX_fake_script)()
-local function PVLB_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(TVYRG_fake_script)()
+local function EZQPF_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	local iss = script.Parent.Parent.Cycle
@@ -714,6 +832,8 @@ local function PVLB_fake_script() -- ImageButton.LocalScript
 	local CycleAimbot5 = script.Parent.Parent.Parent.FrameAimbot.Cycle6
 	local CycleAimbot6 = script.Parent.Parent.Parent.FrameAimbot.Cycle5
 	local CycleAimbot7 = script.Parent.Parent.Parent.FrameAimbot.Cycle7
+	local target = script.Parent.Parent.Parent.Target
+	local target2 = script.Parent.Parent.Parent.FrameBaseTarget
 	local on2 = 0
 	local open = 0
 	
@@ -731,6 +851,8 @@ local function PVLB_fake_script() -- ImageButton.LocalScript
 				CycleAimbot.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
 				on2 = 0
 			end
+	
+			
 			if iss.Text == "Cycle (x2)" then
 				CycleAimbot.TextColor3 = Color3.new(1,1,1)
 				CycleAimbot7.TextColor3 = Color3.new(1,1,1)
@@ -740,8 +862,8 @@ local function PVLB_fake_script() -- ImageButton.LocalScript
 				CycleAimbot5.TextColor3 = Color3.new(1,1,1)
 				CycleAimbot2.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
 				on2 = 0
-		
 			end
+			
 			if iss.Text == "Near crosshair" then
 				CycleAimbot2.TextColor3 = Color3.new(1,1,1)
 				CycleAimbot7.TextColor3 = Color3.new(1,1,1)
@@ -751,8 +873,8 @@ local function PVLB_fake_script() -- ImageButton.LocalScript
 				CycleAimbot3.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
 				CycleAimbot4.TextColor3 = Color3.new(1,1,1)
 				on2 = 0
-				
 			end
+			
 			if iss.Text == "Highest domage" then
 				CycleAimbot2.TextColor3 = Color3.new(1,1,1)
 				CycleAimbot7.TextColor3 = Color3.new(1,1,1)
@@ -764,6 +886,7 @@ local function PVLB_fake_script() -- ImageButton.LocalScript
 				CycleAimbot4.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
 				on2 = 0
 			end
+			
 			if iss.Text == "Lowest Ping" then
 				CycleAimbot2.TextColor3 = Color3.new(1,1,1)
 				CycleAimbot3.TextColor3 = Color3.new(1,1,1)
@@ -786,6 +909,8 @@ local function PVLB_fake_script() -- ImageButton.LocalScript
 				CycleAimbot6.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
 				on2 = 0
 			end
+			
+			
 			if iss.Text == "Best hit chance" then
 				CycleAimbot2.TextColor3 = Color3.new(1,1,1)
 				CycleAimbot3.TextColor3 = Color3.new(1,1,1)
@@ -800,9 +925,190 @@ local function PVLB_fake_script() -- ImageButton.LocalScript
 		else
 			
 			iss.TextColor3 = Color3.new	(1, 1, 1)
-			AImbot.Visible = false
+			AImbot.Visible = true
 			on2 = 0
 		end
+		
 	end)
 end
-coroutine.wrap(PVLB_fake_script)()
+coroutine.wrap(EZQPF_fake_script)()
+local function GCFBP_fake_script() -- ImageButton_2.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton_2)
+
+	local iss = script.Parent.Parent.Head
+	local Target = script.Parent.Parent.Parent.FrameTarget
+	local Head = script.Parent.Parent.Parent.FrameTarget.Head
+	local Chest = script.Parent.Parent.Parent.FrameTarget.Chest
+	local Legs = script.Parent.Parent.Parent.FrameTarget.Legs
+	local Arms = script.Parent.Parent.Parent.FrameTarget.Arms
+	local Stomach = script.Parent.Parent.Parent.FrameTarget.Stomach
+	local Feet = script.Parent.Parent.Parent.FrameTarget.Feet
+	
+	local on2 = 0
+	-- Variables
+	
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()	
+		if on2 == 0 then
+			Target.Visible = true
+			on2 = 1
+			if iss.Text == "Head" then
+				Head.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
+				Chest.TextColor3 = Color3.new(1,1,1)
+				Legs.TextColor3 = Color3.new(1,1,1)
+				Arms.TextColor3 = Color3.new(1,1,1)
+				Stomach.TextColor3 = Color3.new(1,1,1)
+				Feet.TextColor3 = Color3.new(1,1,1)
+				on2 = 0
+				
+			end
+			if iss.Text == "Chest" then
+				Chest.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
+				Head.TextColor3 = Color3.new(1,1,1)
+				Legs.TextColor3 = Color3.new(1,1,1)
+				Arms.TextColor3 = Color3.new(1,1,1)
+			 Stomach.TextColor3 = Color3.new(1,1,1)
+				Feet.TextColor3 = Color3.new(1,1,1)
+				on2 = 0
+			end
+			
+			if iss.Text ==  "Legs" then
+				Legs.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
+				Head.TextColor3 = Color3.new(1,1,1)
+		       Chest.TextColor3 = Color3.new(1,1,1)
+				Arms.TextColor3 = Color3.new(1,1,1)
+			 Stomach.TextColor3 = Color3.new(1,1,1)
+				Feet.TextColor3 = Color3.new(1,1,1)
+				on2 = 0
+			end
+			
+			if iss.Text == "Arms" then
+				Arms.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
+				Head.TextColor3 = Color3.new(1,1,1)
+				Chest.TextColor3 = Color3.new(1,1,1)
+				Legs.TextColor3 = Color3.new(1,1,1)
+				Stomach.TextColor3 = Color3.new(1,1,1)
+				Feet.TextColor3 = Color3.new(1,1,1)
+				on2 = 0
+			end
+			if iss.Text == "Stomach" then
+				Stomach.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
+				Head.TextColor3 = Color3.new(1,1,1)
+				Chest.TextColor3 = Color3.new(1,1,1)
+				Arms.TextColor3 = Color3.new(1,1,1)
+				Legs.TextColor3 = Color3.new(1,1,1)
+				Feet.TextColor3 = Color3.new(1,1,1)
+				on2 = 0
+			end
+			if iss.Text == "Feet" then
+				Feet.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
+				
+				Head.TextColor3 = Color3.new(1,1,1)
+				Chest.TextColor3 = Color3.new(1,1,1)
+				Arms.TextColor3 = Color3.new(1,1,1)
+				Legs.TextColor3 = Color3.new(1,1,1)
+				Stomach.TextColor3 = Color3.new(1,1,1)
+				on2 = 0
+			end
+		else
+			iss.TextColor3 = Color3.new	(1, 1, 1)
+			Target.Visible = true
+			on2 = 0
+		end 
+	end)
+end
+coroutine.wrap(GCFBP_fake_script)()
+local function YKSLHS_fake_script() -- Arms.LocalScript 
+	local script = Instance.new('LocalScript', Arms)
+
+	local lmao4 = script.Parent.Parent.Parent.FrameBaseTarget.Head
+	local frameIss4 = script.Parent.Parent.Parent.FrameTarget
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		lmao4.Text = "Arms"
+		frameIss4.Visible = false
+	end)
+end
+coroutine.wrap(YKSLHS_fake_script)()
+local function AWZEWV_fake_script() -- Chest.LocalScript 
+	local script = Instance.new('LocalScript', Chest)
+
+	local lmao2 = script.Parent.Parent.Parent.FrameBaseTarget.Head
+	local frameIss2 = script.Parent.Parent.Parent.FrameTarget
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		lmao2.Text = "Chest"
+		frameIss2.Visible = false
+	end)
+end
+coroutine.wrap(AWZEWV_fake_script)()
+local function PAKUL_fake_script() -- Feet.LocalScript 
+	local script = Instance.new('LocalScript', Feet)
+
+	local lmao6 = script.Parent.Parent.Parent.FrameBaseTarget.Head
+	local frameIss6 = script.Parent.Parent.Parent.FrameTarget
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		lmao6.Text = "Feet"
+		frameIss6.Visible = false
+	end)
+end
+coroutine.wrap(PAKUL_fake_script)()
+local function CBYC_fake_script() -- Head_2.LocalScript 
+	local script = Instance.new('LocalScript', Head_2)
+
+	local lmao = script.Parent.Parent.Parent.FrameBaseTarget.Head
+	local frameIss = script.Parent.Parent.Parent.FrameTarget
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		lmao.Text = "Head"
+		frameIss.Visible = false
+	end)
+end
+coroutine.wrap(CBYC_fake_script)()
+local function PZBSWD_fake_script() -- Legs.LocalScript 
+	local script = Instance.new('LocalScript', Legs)
+
+	local lmao6 = script.Parent.Parent.Parent.FrameBaseTarget.Head
+	local frameIss6 = script.Parent.Parent.Parent.FrameTarget
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		lmao6.Text = "Legs"
+		frameIss6.Visible = false
+	end)
+end
+coroutine.wrap(PZBSWD_fake_script)()
+local function NJCOEU_fake_script() -- Stomach.LocalScript 
+	local script = Instance.new('LocalScript', Stomach)
+
+	local lmao3 = script.Parent.Parent.Parent.FrameBaseTarget.Head
+	local frameIss3 = script.Parent.Parent.Parent.FrameTarget
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		lmao3.Text = "Stomach"
+		frameIss3.Visible = false
+	end)
+end
+coroutine.wrap(NJCOEU_fake_script)()
+local function ALPUR_fake_script() -- AimbotGui.LocalScript 
+	local script = Instance.new('LocalScript', AimbotGui)
+
+	local AImbot = script.Parent.FrameAimbot
+	local target = script.Parent.Target
+	local target2 = script.Parent.FrameBaseTarget
+	while true do wait()
+	print(AImbot.Visible)
+	if AImbot.Visible == true then
+			target.Visible = false
+			target2.Visible = false
+		else
+			target.Visible = true
+			target2.Visible = true
+		end
+		
+	end
+	
+end
+coroutine.wrap(ALPUR_fake_script)()
