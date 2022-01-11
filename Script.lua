@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local BaseGui = Instance.new("ScreenGui")
 local MainGui = Instance.new("Frame")
 local Frame = Instance.new("Frame")
@@ -80,6 +75,7 @@ MainGui.Active = true
 MainGui.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
 MainGui.Position = UDim2.new(0.119151264, 0, 0.0723926425, 0)
 MainGui.Size = UDim2.new(0, 851, 0, 696)
+MainGui.Visible = false
 
 Frame.Parent = MainGui
 Frame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
@@ -226,7 +222,6 @@ AimbotGui.Parent = BaseGui
 AimbotGui.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
 AimbotGui.Position = UDim2.new(0.169653594, 0, 0.0515337437, 0)
 AimbotGui.Size = UDim2.new(0, 851, 0, 696)
-AimbotGui.Visible = false
 
 Frame_2.Parent = AimbotGui
 Frame_2.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
@@ -642,7 +637,7 @@ Stomach.TextSize = 15.000
 
 -- Scripts:
 
-local function MNNNY_fake_script() -- Aimbot.LocalScript 
+local function RODSNX_fake_script() -- Aimbot.LocalScript 
 	local script = Instance.new('LocalScript', Aimbot)
 
 	local gui = script.Parent.Parent.Parent.MainGui
@@ -652,8 +647,8 @@ local function MNNNY_fake_script() -- Aimbot.LocalScript
 		Aimbot.Visible = true
 	end)
 end
-coroutine.wrap(MNNNY_fake_script)()
-local function XVGCAD_fake_script() -- MainGui.LocalScript 
+coroutine.wrap(RODSNX_fake_script)()
+local function CKWQW_fake_script() -- MainGui.LocalScript 
 	local script = Instance.new('LocalScript', MainGui)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -696,8 +691,8 @@ local function XVGCAD_fake_script() -- MainGui.LocalScript
 		end
 	end)
 end
-coroutine.wrap(XVGCAD_fake_script)()
-local function KDBKP_fake_script() -- Aimbot_2.LocalScript 
+coroutine.wrap(CKWQW_fake_script)()
+local function WLRFBJK_fake_script() -- Aimbot_2.LocalScript 
 	local script = Instance.new('LocalScript', Aimbot_2)
 
 	local gui = script.Parent.Parent.Parent.Parent.BaseGui
@@ -705,8 +700,8 @@ local function KDBKP_fake_script() -- Aimbot_2.LocalScript
 		print('monkey user§')
 	end)
 end
-coroutine.wrap(KDBKP_fake_script)()
-local function ZHBCBZ_fake_script() -- AimbotGui.LocalScript 
+coroutine.wrap(WLRFBJK_fake_script)()
+local function IKQXIFO_fake_script() -- AimbotGui.LocalScript 
 	local script = Instance.new('LocalScript', AimbotGui)
 
 	
@@ -750,8 +745,8 @@ local function ZHBCBZ_fake_script() -- AimbotGui.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZHBCBZ_fake_script)()
-local function RQCPMH_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(IKQXIFO_fake_script)()
+local function FCWMBEY_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local userInputService = game:GetService("UserInputService")
@@ -764,8 +759,8 @@ local function RQCPMH_fake_script() -- TextButton.LocalScript
 	
 	
 end
-coroutine.wrap(RQCPMH_fake_script)()
-local function SIKHMAV_fake_script() -- Button2.LocalScript 
+coroutine.wrap(FCWMBEY_fake_script)()
+local function ETJIMO_fake_script() -- Button2.LocalScript 
 	local script = Instance.new('LocalScript', Button2)
 
 	local on = 0
@@ -781,8 +776,8 @@ local function SIKHMAV_fake_script() -- Button2.LocalScript
 	
 	end)
 end
-coroutine.wrap(SIKHMAV_fake_script)()
-local function WQCZXBI_fake_script() -- Cycle.LocalScript 
+coroutine.wrap(ETJIMO_fake_script)()
+local function BSXFBV_fake_script() -- Cycle.LocalScript 
 	local script = Instance.new('LocalScript', Cycle)
 
 	local lmao = script.Parent.Parent.Parent.FrameBase.Cycle
@@ -793,8 +788,8 @@ local function WQCZXBI_fake_script() -- Cycle.LocalScript
 		frameIss.Visible = false
 	end)
 end
-coroutine.wrap(WQCZXBI_fake_script)()
-local function RITFUO_fake_script() -- Cycle2.LocalScript 
+coroutine.wrap(BSXFBV_fake_script)()
+local function OWUEKA_fake_script() -- Cycle2.LocalScript 
 	local script = Instance.new('LocalScript', Cycle2)
 
 	local lmao2 = script.Parent.Parent.Parent.FrameBase.Cycle
@@ -805,8 +800,8 @@ local function RITFUO_fake_script() -- Cycle2.LocalScript
 		frameIss2.Visible = false
 	end)
 end
-coroutine.wrap(RITFUO_fake_script)()
-local function IXVMP_fake_script() -- Cycle3.LocalScript 
+coroutine.wrap(OWUEKA_fake_script)()
+local function KYZTYZW_fake_script() -- Cycle3.LocalScript 
 	local script = Instance.new('LocalScript', Cycle3)
 
 	local lmao3 = script.Parent.Parent.Parent.FrameBase.Cycle
@@ -817,8 +812,8 @@ local function IXVMP_fake_script() -- Cycle3.LocalScript
 		frameIss3.Visible = false
 	end)
 end
-coroutine.wrap(IXVMP_fake_script)()
-local function HCONUQ_fake_script() -- Cycle4.LocalScript 
+coroutine.wrap(KYZTYZW_fake_script)()
+local function SMYVWX_fake_script() -- Cycle4.LocalScript 
 	local script = Instance.new('LocalScript', Cycle4)
 
 	local lmao4 = script.Parent.Parent.Parent.FrameBase.Cycle
@@ -829,8 +824,8 @@ local function HCONUQ_fake_script() -- Cycle4.LocalScript
 		frameIss4.Visible = false
 	end)
 end
-coroutine.wrap(HCONUQ_fake_script)()
-local function IDPF_fake_script() -- Cycle5.LocalScript 
+coroutine.wrap(SMYVWX_fake_script)()
+local function AHGYP_fake_script() -- Cycle5.LocalScript 
 	local script = Instance.new('LocalScript', Cycle5)
 
 	local lmao6 = script.Parent.Parent.Parent.FrameBase.Cycle
@@ -841,8 +836,8 @@ local function IDPF_fake_script() -- Cycle5.LocalScript
 		frameIss6.Visible = false
 	end)
 end
-coroutine.wrap(IDPF_fake_script)()
-local function DMRN_fake_script() -- Cycle6.LocalScript 
+coroutine.wrap(AHGYP_fake_script)()
+local function RTLGBLI_fake_script() -- Cycle6.LocalScript 
 	local script = Instance.new('LocalScript', Cycle6)
 
 	local lmao6 = script.Parent.Parent.Parent.FrameBase.Cycle
@@ -853,8 +848,8 @@ local function DMRN_fake_script() -- Cycle6.LocalScript
 		frameIss6.Visible = false
 	end)
 end
-coroutine.wrap(DMRN_fake_script)()
-local function KPAL_fake_script() -- Cycle7.LocalScript 
+coroutine.wrap(RTLGBLI_fake_script)()
+local function DHSB_fake_script() -- Cycle7.LocalScript 
 	local script = Instance.new('LocalScript', Cycle7)
 
 	local lmao7 = script.Parent.Parent.Parent.FrameBase.Cycle
@@ -865,8 +860,8 @@ local function KPAL_fake_script() -- Cycle7.LocalScript
 		frameIss7.Visible = false
 	end)
 end
-coroutine.wrap(KPAL_fake_script)()
-local function FMSKPRJ_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(DHSB_fake_script)()
+local function BHFVGRA_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	local iss = script.Parent.Parent.Cycle
@@ -977,8 +972,8 @@ local function FMSKPRJ_fake_script() -- ImageButton.LocalScript
 		
 	end)
 end
-coroutine.wrap(FMSKPRJ_fake_script)()
-local function CTLNYKM_fake_script() -- ImageButton_2.LocalScript 
+coroutine.wrap(BHFVGRA_fake_script)()
+local function EIKJ_fake_script() -- ImageButton_2.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_2)
 
 	local iss = script.Parent.Parent.Head
@@ -1065,8 +1060,8 @@ local function CTLNYKM_fake_script() -- ImageButton_2.LocalScript
 		end 
 	end)
 end
-coroutine.wrap(CTLNYKM_fake_script)()
-local function RCZDEV_fake_script() -- Arms.LocalScript 
+coroutine.wrap(EIKJ_fake_script)()
+local function TYGSM_fake_script() -- Arms.LocalScript 
 	local script = Instance.new('LocalScript', Arms)
 
 	local lmao4 = script.Parent.Parent.Parent.FrameBaseTarget.Head
@@ -1077,8 +1072,8 @@ local function RCZDEV_fake_script() -- Arms.LocalScript
 		frameIss4.Visible = false
 	end)
 end
-coroutine.wrap(RCZDEV_fake_script)()
-local function BFBNZ_fake_script() -- Chest.LocalScript 
+coroutine.wrap(TYGSM_fake_script)()
+local function UOUGT_fake_script() -- Chest.LocalScript 
 	local script = Instance.new('LocalScript', Chest)
 
 	local lmao2 = script.Parent.Parent.Parent.FrameBaseTarget.Head
@@ -1089,8 +1084,8 @@ local function BFBNZ_fake_script() -- Chest.LocalScript
 		frameIss2.Visible = false
 	end)
 end
-coroutine.wrap(BFBNZ_fake_script)()
-local function VFKD_fake_script() -- Feet.LocalScript 
+coroutine.wrap(UOUGT_fake_script)()
+local function BVMJ_fake_script() -- Feet.LocalScript 
 	local script = Instance.new('LocalScript', Feet)
 
 	local lmao6 = script.Parent.Parent.Parent.FrameBaseTarget.Head
@@ -1101,8 +1096,8 @@ local function VFKD_fake_script() -- Feet.LocalScript
 		frameIss6.Visible = false
 	end)
 end
-coroutine.wrap(VFKD_fake_script)()
-local function WVFYK_fake_script() -- Head_2.LocalScript 
+coroutine.wrap(BVMJ_fake_script)()
+local function VMPDNO_fake_script() -- Head_2.LocalScript 
 	local script = Instance.new('LocalScript', Head_2)
 
 	local lmao = script.Parent.Parent.Parent.FrameBaseTarget.Head
@@ -1113,8 +1108,8 @@ local function WVFYK_fake_script() -- Head_2.LocalScript
 		frameIss.Visible = false
 	end)
 end
-coroutine.wrap(WVFYK_fake_script)()
-local function KOOKYWS_fake_script() -- Legs.LocalScript 
+coroutine.wrap(VMPDNO_fake_script)()
+local function HRAEL_fake_script() -- Legs.LocalScript 
 	local script = Instance.new('LocalScript', Legs)
 
 	local lmao6 = script.Parent.Parent.Parent.FrameBaseTarget.Head
@@ -1125,8 +1120,8 @@ local function KOOKYWS_fake_script() -- Legs.LocalScript
 		frameIss6.Visible = false
 	end)
 end
-coroutine.wrap(KOOKYWS_fake_script)()
-local function IQPA_fake_script() -- Stomach.LocalScript 
+coroutine.wrap(HRAEL_fake_script)()
+local function XDRO_fake_script() -- Stomach.LocalScript 
 	local script = Instance.new('LocalScript', Stomach)
 
 	local lmao3 = script.Parent.Parent.Parent.FrameBaseTarget.Head
@@ -1137,23 +1132,24 @@ local function IQPA_fake_script() -- Stomach.LocalScript
 		frameIss3.Visible = false
 	end)
 end
-coroutine.wrap(IQPA_fake_script)()
-local function GGWEFDC_fake_script() -- AimbotGui.LocalScript 
+coroutine.wrap(XDRO_fake_script)()
+local function CORA_fake_script() -- AimbotGui.LocalScript 
 	local script = Instance.new('LocalScript', AimbotGui)
 
 	local AImbot = script.Parent.FrameAimbot
 	local target = script.Parent.Target
 	local target2 = script.Parent.FrameBaseTarget
+	local target3 = script.Parent.FrameTarget
 	while true do wait()
 	if AImbot.Visible == true then
 			target.Visible = false
 			target2.Visible = false
+			target3.Visible = false
 		else
 			target.Visible = true
 			target2.Visible = true
-		end
-		
+				end
 	end
 	
 end
-coroutine.wrap(GGWEFDC_fake_script)()
+coroutine.wrap(CORA_fake_script)()
