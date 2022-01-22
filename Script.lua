@@ -1,3 +1,8 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local BaseGui = Instance.new("ScreenGui")
 local MainGui = Instance.new("Frame")
 local Frame = Instance.new("Frame")
@@ -402,7 +407,7 @@ TextLabel_5.TextSize = 16.000
 TextLabel_6.Parent = AimbotGui
 TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.Position = UDim2.new(0.183313742, 0, 0.140804604, 0)
+TextLabel_6.Position = UDim2.new(0.179788485, 0, 0.140804604, 0)
 TextLabel_6.Size = UDim2.new(0, 163, 0, 34)
 TextLabel_6.Font = Enum.Font.SourceSans
 TextLabel_6.Text = "Target Selection"
@@ -498,7 +503,7 @@ FrameBase.Name = "FrameBase"
 FrameBase.Parent = AimbotGui
 FrameBase.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 FrameBase.BorderColor3 = Color3.fromRGB(0, 0, 0)
-FrameBase.Position = UDim2.new(0.210359633, 0, 0.189637542, 0)
+FrameBase.Position = UDim2.new(0.205659285, 0, 0.189637542, 0)
 FrameBase.Size = UDim2.new(0, 154, 0, 23)
 
 Cycle_2.Name = "Cycle"
@@ -526,10 +531,10 @@ Target.Name = "Target"
 Target.Parent = AimbotGui
 Target.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Target.BackgroundTransparency = 1.000
-Target.Position = UDim2.new(0.183313742, 0, 0.227788091, 0)
+Target.Position = UDim2.new(0.170387775, 0, 0.23209843, 0)
 Target.Size = UDim2.new(0, 163, 0, 31)
 Target.Font = Enum.Font.SourceSans
-Target.Text = "Target Selection"
+Target.Text = "Target Hitbox"
 Target.TextColor3 = Color3.fromRGB(255, 255, 255)
 Target.TextSize = 14.000
 
@@ -537,7 +542,7 @@ FrameBaseTarget.Name = "FrameBaseTarget"
 FrameBaseTarget.Parent = AimbotGui
 FrameBaseTarget.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 FrameBaseTarget.BorderColor3 = Color3.fromRGB(0, 0, 0)
-FrameBaseTarget.Position = UDim2.new(0.210359633, 0, 0.271534085, 0)
+FrameBaseTarget.Position = UDim2.new(0.205659285, 0, 0.271534085, 0)
 FrameBaseTarget.Size = UDim2.new(0, 154, 0, 23)
 
 Head.Name = "Head"
@@ -637,7 +642,7 @@ Stomach.TextSize = 15.000
 
 -- Scripts:
 
-local function RODSNX_fake_script() -- Aimbot.LocalScript 
+local function SSHAAHI_fake_script() -- Aimbot.LocalScript 
 	local script = Instance.new('LocalScript', Aimbot)
 
 	local gui = script.Parent.Parent.Parent.MainGui
@@ -647,8 +652,8 @@ local function RODSNX_fake_script() -- Aimbot.LocalScript
 		Aimbot.Visible = true
 	end)
 end
-coroutine.wrap(RODSNX_fake_script)()
-local function CKWQW_fake_script() -- MainGui.LocalScript 
+coroutine.wrap(SSHAAHI_fake_script)()
+local function QOYFOT_fake_script() -- MainGui.LocalScript 
 	local script = Instance.new('LocalScript', MainGui)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -691,20 +696,438 @@ local function CKWQW_fake_script() -- MainGui.LocalScript
 		end
 	end)
 end
-coroutine.wrap(CKWQW_fake_script)()
-local function WLRFBJK_fake_script() -- Aimbot_2.LocalScript 
+coroutine.wrap(QOYFOT_fake_script)()
+local function GZZB_fake_script() -- Aimbot_2.LocalScript 
 	local script = Instance.new('LocalScript', Aimbot_2)
 
-	local gui = script.Parent.Parent.Parent.Parent.BaseGui
+	local gui = script.Parent.Parent.Parent.AimbotGui
 	script.Parent.MouseButton1Click:Connect(function()
 		print('monkey user§')
+	end) 
+	
+end
+coroutine.wrap(GZZB_fake_script)()
+local function JGDOIPG_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local userInputService = game:GetService("UserInputService")
+	local modify = script.Parent.Parent.TextButton
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
+	
 	end)
 end
-coroutine.wrap(WLRFBJK_fake_script)()
-local function IKQXIFO_fake_script() -- AimbotGui.LocalScript 
-	local script = Instance.new('LocalScript', AimbotGui)
+coroutine.wrap(JGDOIPG_fake_script)()
+local function DOXUIG_fake_script() -- Button2.LocalScript 
+	local script = Instance.new('LocalScript', Button2)
+
+	local on = 0
+	local Button = script.Parent.Parent.Button2
+	local localPlayer = game:GetService("Players").LocalPlayer
+	local EzAimbot = loadstring(game:HttpGetAsync("https://pastebin.com/raw/pxw53EdA"))()
+	script.Parent.MouseButton1Click:Connect(function()
+		if on == 0 then
+			Button.BackgroundColor3 = Color3.new(0.603922, 0.772549, 0.152941)
+			on = 1
+			
+			EzAimbot.Enable(true,{["Size"]=500,["Sides"]=50,["Color"]=Color3.fromRGB(255,0,0)},"E",true)
+		elseif on == 1 then
+			Button.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
+			on = 0
+			EzAimbot.Disable()
+		end        
+		
+	end)
+end
+coroutine.wrap(DOXUIG_fake_script)()
+local function VFVKISY_fake_script() -- Cycle.LocalScript 
+	local script = Instance.new('LocalScript', Cycle)
+
+	local lmao2 = script.Parent.Parent.Parent.FrameBase.Cycle
+	local frameIss2 = script.Parent.Parent.Parent.FrameAimbot
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		lmao2.Text = "Cycle"
+		frameIss2.Visible = false
+	end)
+end
+coroutine.wrap(VFVKISY_fake_script)()
+local function IQRF_fake_script() -- Cycle2.LocalScript 
+	local script = Instance.new('LocalScript', Cycle2)
+
+	local lmao2 = script.Parent.Parent.Parent.FrameBase.Cycle
+	local frameIss2 = script.Parent.Parent.Parent.FrameAimbot
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		lmao2.Text = "Cycle (x2)"
+		frameIss2.Visible = false
+	end)
+end
+coroutine.wrap(IQRF_fake_script)()
+local function UXKGEU_fake_script() -- Cycle3.LocalScript 
+	local script = Instance.new('LocalScript', Cycle3)
+
+	local lmao3 = script.Parent.Parent.Parent.FrameBase.Cycle
+	local frameIss3 = script.Parent.Parent.Parent.FrameAimbot
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		lmao3.Text = "Near crosshair"
+		frameIss3.Visible = false
+	end)
+	
+end
+coroutine.wrap(UXKGEU_fake_script)()
+local function GIUCWZZ_fake_script() -- Cycle4.LocalScript 
+	local script = Instance.new('LocalScript', Cycle4)
+
+	local lmao4 = script.Parent.Parent.Parent.FrameBase.Cycle
+	local frameIss4 = script.Parent.Parent.Parent.FrameAimbot
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		lmao4.Text = "Highest domage"
+		frameIss4.Visible = false
+	end)
+end
+coroutine.wrap(GIUCWZZ_fake_script)()
+local function MQLH_fake_script() -- Cycle5.LocalScript 
+	local script = Instance.new('LocalScript', Cycle5)
 
 	
+	local lmao6 = script.Parent.Parent.Parent.FrameBase.Cycle
+	local frameIss6 = script.Parent.Parent.Parent.FrameAimbot
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		lmao6.Text = "Best K/D ratio"
+		frameIss6.Visible = false
+	end)
+end
+coroutine.wrap(MQLH_fake_script)()
+local function PYDSPMZ_fake_script() -- Cycle6.LocalScript 
+	local script = Instance.new('LocalScript', Cycle6)
+
+	
+	local lmao6 = script.Parent.Parent.Parent.FrameBase.Cycle
+	local frameIss6 = script.Parent.Parent.Parent.FrameAimbot
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		lmao6.Text = "Lowest Ping"
+		frameIss6.Visible = false
+	end)
+end
+coroutine.wrap(PYDSPMZ_fake_script)()
+local function BXEGI_fake_script() -- Cycle7.LocalScript 
+	local script = Instance.new('LocalScript', Cycle7)
+
+	local lmao7 = script.Parent.Parent.Parent.FrameBase.Cycle
+	local frameIss7 = script.Parent.Parent.Parent.FrameAimbot
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		lmao7.Text = "Best hit chance"
+		frameIss7.Visible = false
+	end)
+end
+coroutine.wrap(BXEGI_fake_script)()
+local function OBUO_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	local iss = script.Parent.Parent.Cycle
+	local AImbot = script.Parent.Parent.Parent.FrameAimbot
+	local CycleAimbot = script.Parent.Parent.Parent.FrameAimbot.Cycle
+	local CycleAimbot2 = script.Parent.Parent.Parent.FrameAimbot.Cycle2
+	local CycleAimbot3 = script.Parent.Parent.Parent.FrameAimbot.Cycle3
+	local CycleAimbot4 = script.Parent.Parent.Parent.FrameAimbot.Cycle4
+	local CycleAimbot5 = script.Parent.Parent.Parent.FrameAimbot.Cycle6
+	local CycleAimbot6 = script.Parent.Parent.Parent.FrameAimbot.Cycle5
+	local CycleAimbot7 = script.Parent.Parent.Parent.FrameAimbot.Cycle7
+	local target = script.Parent.Parent.Parent.Target
+	local target2 = script.Parent.Parent.Parent.FrameBaseTarget
+	local on2 = 0
+	local open = 0
+	
+	script.Parent.MouseButton1Click:Connect(function()	
+		if on2 == 0 then
+			AImbot.Visible = true
+			on2 = 1
+			if iss.Text == "Cycle" then
+				CycleAimbot2.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot3.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot4.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot5.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot6.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot7.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
+				on2 = 0
+			end
+	
+	
+			if iss.Text == "Cycle (x2)" then
+				CycleAimbot.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot7.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot6.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot3.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot4.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot5.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot2.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
+				on2 = 0
+			end
+	
+			if iss.Text == "Near crosshair" then
+				CycleAimbot2.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot7.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot.TextColor3  = Color3.new(1,1,1)
+				CycleAimbot6.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot5.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot3.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
+				CycleAimbot4.TextColor3 = Color3.new(1,1,1)
+				on2 = 0
+			end
+	
+			if iss.Text == "Highest domage" then
+				CycleAimbot2.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot7.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot3.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot5.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot6.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot4.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot4.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
+				on2 = 0
+			end
+	
+			if iss.Text == "Lowest Ping" then
+				CycleAimbot2.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot3.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot6.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot5.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot7.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot4.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot5.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
+				on2 = 0
+			end
+	
+			if iss.Text == "Best K/D ratio" then
+				CycleAimbot2.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot3.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot4.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot5.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot7.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot6.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
+				on2 = 0
+			end
+	
+	
+			if iss.Text == "Best hit chance" then
+				CycleAimbot2.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot3.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot4.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot6.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot5.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot.TextColor3 = Color3.new(1,1,1)
+				CycleAimbot7.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
+				on2 = 0
+			end
+	
+		else
+	
+			iss.TextColor3 = Color3.new	(1, 1, 1)
+			AImbot.Visible = true
+			on2 = 0
+		end
+	
+	end)
+end
+coroutine.wrap(OBUO_fake_script)()
+local function MBDKT_fake_script() -- ImageButton_2.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton_2)
+
+	local iss = script.Parent.Parent.Head
+	local Target = script.Parent.Parent.Parent.FrameTarget
+	local Head = script.Parent.Parent.Parent.FrameTarget.Head
+	local Chest = script.Parent.Parent.Parent.FrameTarget.Chest
+	local Legs = script.Parent.Parent.Parent.FrameTarget.Legs
+	local Arms = script.Parent.Parent.Parent.FrameTarget.Arms
+	local Stomach = script.Parent.Parent.Parent.FrameTarget.Stomach
+	local Feet = script.Parent.Parent.Parent.FrameTarget.Feet
+	
+	local on2 = 0
+	-- Variables
+	
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()	
+		if on2 == 0 then
+			Target.Visible = true
+			on2 = 1
+			if iss.Text == "Head" then
+				Head.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
+				Chest.TextColor3 = Color3.new(1,1,1)
+				Legs.TextColor3 = Color3.new(1,1,1)
+				Arms.TextColor3 = Color3.new(1,1,1)
+				Stomach.TextColor3 = Color3.new(1,1,1)
+				Feet.TextColor3 = Color3.new(1,1,1)
+				on2 = 0
+	
+			end
+			if iss.Text == "Chest" then
+				Chest.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
+				Head.TextColor3 = Color3.new(1,1,1)
+				Legs.TextColor3 = Color3.new(1,1,1)
+				Arms.TextColor3 = Color3.new(1,1,1)
+				Stomach.TextColor3 = Color3.new(1,1,1)
+				Feet.TextColor3 = Color3.new(1,1,1)
+				on2 = 0
+			end
+	
+			if iss.Text ==  "Legs" then
+				Legs.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
+				Head.TextColor3 = Color3.new(1,1,1)
+				Chest.TextColor3 = Color3.new(1,1,1)
+				Arms.TextColor3 = Color3.new(1,1,1)
+				Stomach.TextColor3 = Color3.new(1,1,1)
+				Feet.TextColor3 = Color3.new(1,1,1)
+				on2 = 0
+			end
+	
+			if iss.Text == "Arms" then
+				Arms.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
+				Head.TextColor3 = Color3.new(1,1,1)
+				Chest.TextColor3 = Color3.new(1,1,1)
+				Legs.TextColor3 = Color3.new(1,1,1)
+				Stomach.TextColor3 = Color3.new(1,1,1)
+				Feet.TextColor3 = Color3.new(1,1,1)
+				on2 = 0
+			end
+			if iss.Text == "Stomach" then
+				Stomach.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
+				Head.TextColor3 = Color3.new(1,1,1)
+				Chest.TextColor3 = Color3.new(1,1,1)
+				Arms.TextColor3 = Color3.new(1,1,1)
+				Legs.TextColor3 = Color3.new(1,1,1)
+				Feet.TextColor3 = Color3.new(1,1,1)
+				on2 = 0
+			end
+			if iss.Text == "Feet" then
+				Feet.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
+	
+				Head.TextColor3 = Color3.new(1,1,1)
+				Chest.TextColor3 = Color3.new(1,1,1)
+				Arms.TextColor3 = Color3.new(1,1,1)
+				Legs.TextColor3 = Color3.new(1,1,1)
+				Stomach.TextColor3 = Color3.new(1,1,1)
+				on2 = 0
+			end
+		else
+			iss.TextColor3 = Color3.new	(1, 1, 1)
+			Target.Visible = true
+			on2 = 0
+		end 
+	end)
+end
+coroutine.wrap(MBDKT_fake_script)()
+local function SZSJNGZ_fake_script() -- Arms.LocalScript 
+	local script = Instance.new('LocalScript', Arms)
+
+	
+	local lmao4 = script.Parent.Parent.Parent.FrameBaseTarget.Head
+	local frameIss4 = script.Parent.Parent.Parent.FrameTarget
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		lmao4.Text = "Arms"
+		frameIss4.Visible = false
+	end)
+end
+coroutine.wrap(SZSJNGZ_fake_script)()
+local function VLKITJ_fake_script() -- Chest.LocalScript 
+	local script = Instance.new('LocalScript', Chest)
+
+	local lmao2 = script.Parent.Parent.Parent.FrameBaseTarget.Head
+	local frameIss2 = script.Parent.Parent.Parent.FrameTarget
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		lmao2.Text = "Chest"
+		frameIss2.Visible = false
+	end)
+end
+coroutine.wrap(VLKITJ_fake_script)()
+local function CLOB_fake_script() -- Feet.LocalScript 
+	local script = Instance.new('LocalScript', Feet)
+
+	
+	local lmao6 = script.Parent.Parent.Parent.FrameBaseTarget.Head
+	local frameIss6 = script.Parent.Parent.Parent.FrameTarget
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		lmao6.Text = "Feet"
+		frameIss6.Visible = false
+	end)
+end
+coroutine.wrap(CLOB_fake_script)()
+local function VOSSKPK_fake_script() -- Head_2.LocalScript 
+	local script = Instance.new('LocalScript', Head_2)
+
+	
+	local lmao = script.Parent.Parent.Parent.FrameBaseTarget.Head
+	local frameIss = script.Parent.Parent.Parent.FrameTarget
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		lmao.Text = "Head"
+		frameIss.Visible = false
+	end)
+end
+coroutine.wrap(VOSSKPK_fake_script)()
+local function ACIKP_fake_script() -- Legs.LocalScript 
+	local script = Instance.new('LocalScript', Legs)
+
+	local lmao6 = script.Parent.Parent.Parent.FrameBaseTarget.Head
+	local frameIss6 = script.Parent.Parent.Parent.FrameTarget
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		lmao6.Text = "Legs"
+		frameIss6.Visible = false
+	end)
+end
+coroutine.wrap(ACIKP_fake_script)()
+local function FUFBFPW_fake_script() -- Stomach.LocalScript 
+	local script = Instance.new('LocalScript', Stomach)
+
+	
+	local lmao3 = script.Parent.Parent.Parent.FrameBaseTarget.Head
+	local frameIss3 = script.Parent.Parent.Parent.FrameTarget
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		lmao3.Text = "Stomach"
+		frameIss3.Visible = false
+	end)
+end
+coroutine.wrap(FUFBFPW_fake_script)()
+local function AALLIOY_fake_script() -- AimbotGui.LocalScript 
+	local script = Instance.new('LocalScript', AimbotGui)
+
+	local aimbot = script.Parent.FrameAimbot
+	local target = script.Parent.Target
+	local target2 = script.Parent.FrameBaseTarget
+	local target3 = script.Parent.FrameTarget
+	while true do wait()
+		if aimbot.Visible == true then
+			target.Visible = false
+			target2.Visible = false
+			target3.Visible = false
+		else
+			target.Visible = true
+			target2.Visible = true
+		end
+		
+	end
+	
+end
+coroutine.wrap(AALLIOY_fake_script)()
+local function COAODS_fake_script() -- AimbotGui.LocalScript 
+	local script = Instance.new('LocalScript', AimbotGui)
+
 	local UserInputService = game:GetService("UserInputService")
 	
 	local gui = script.Parent
@@ -745,411 +1168,4 @@ local function IKQXIFO_fake_script() -- AimbotGui.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IKQXIFO_fake_script)()
-local function FCWMBEY_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
-
-	local userInputService = game:GetService("UserInputService")
-	local modify = script.Parent.Parent.TextButton
-	
-	script.Parent.MouseButton1Click:Connect(function()
-	
-	
-		end)
-	
-	
-end
-coroutine.wrap(FCWMBEY_fake_script)()
-local function ETJIMO_fake_script() -- Button2.LocalScript 
-	local script = Instance.new('LocalScript', Button2)
-
-	local on = 0
-	local Button = script.Parent.Parent.Button2
-	script.Parent.MouseButton1Click:Connect(function()
-		if on == 0 then
-			Button.BackgroundColor3 = Color3.new(0.603922, 0.772549, 0.152941)
-			on = 1
-		else
-			Button.BackgroundColor3 = Color3.new(0.239216, 0.239216, 0.239216)
-			on = 0
-		end        
-	
-	end)
-end
-coroutine.wrap(ETJIMO_fake_script)()
-local function BSXFBV_fake_script() -- Cycle.LocalScript 
-	local script = Instance.new('LocalScript', Cycle)
-
-	local lmao = script.Parent.Parent.Parent.FrameBase.Cycle
-	local frameIss = script.Parent.Parent.Parent.FrameAimbot
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		lmao.Text = "Cycle"
-		frameIss.Visible = false
-	end)
-end
-coroutine.wrap(BSXFBV_fake_script)()
-local function OWUEKA_fake_script() -- Cycle2.LocalScript 
-	local script = Instance.new('LocalScript', Cycle2)
-
-	local lmao2 = script.Parent.Parent.Parent.FrameBase.Cycle
-	local frameIss2 = script.Parent.Parent.Parent.FrameAimbot
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		lmao2.Text = "Cycle (x2)"
-		frameIss2.Visible = false
-	end)
-end
-coroutine.wrap(OWUEKA_fake_script)()
-local function KYZTYZW_fake_script() -- Cycle3.LocalScript 
-	local script = Instance.new('LocalScript', Cycle3)
-
-	local lmao3 = script.Parent.Parent.Parent.FrameBase.Cycle
-	local frameIss3 = script.Parent.Parent.Parent.FrameAimbot
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		lmao3.Text = "Near crosshair"
-		frameIss3.Visible = false
-	end)
-end
-coroutine.wrap(KYZTYZW_fake_script)()
-local function SMYVWX_fake_script() -- Cycle4.LocalScript 
-	local script = Instance.new('LocalScript', Cycle4)
-
-	local lmao4 = script.Parent.Parent.Parent.FrameBase.Cycle
-	local frameIss4 = script.Parent.Parent.Parent.FrameAimbot
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		lmao4.Text = "Highest domage"
-		frameIss4.Visible = false
-	end)
-end
-coroutine.wrap(SMYVWX_fake_script)()
-local function AHGYP_fake_script() -- Cycle5.LocalScript 
-	local script = Instance.new('LocalScript', Cycle5)
-
-	local lmao6 = script.Parent.Parent.Parent.FrameBase.Cycle
-	local frameIss6 = script.Parent.Parent.Parent.FrameAimbot
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		lmao6.Text = "Best K/D ratio"
-		frameIss6.Visible = false
-	end)
-end
-coroutine.wrap(AHGYP_fake_script)()
-local function RTLGBLI_fake_script() -- Cycle6.LocalScript 
-	local script = Instance.new('LocalScript', Cycle6)
-
-	local lmao6 = script.Parent.Parent.Parent.FrameBase.Cycle
-	local frameIss6 = script.Parent.Parent.Parent.FrameAimbot
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		lmao6.Text = "Lowest Ping"
-		frameIss6.Visible = false
-	end)
-end
-coroutine.wrap(RTLGBLI_fake_script)()
-local function DHSB_fake_script() -- Cycle7.LocalScript 
-	local script = Instance.new('LocalScript', Cycle7)
-
-	local lmao7 = script.Parent.Parent.Parent.FrameBase.Cycle
-	local frameIss7 = script.Parent.Parent.Parent.FrameAimbot
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		lmao7.Text = "Best hit chance"
-		frameIss7.Visible = false
-	end)
-end
-coroutine.wrap(DHSB_fake_script)()
-local function BHFVGRA_fake_script() -- ImageButton.LocalScript 
-	local script = Instance.new('LocalScript', ImageButton)
-
-	local iss = script.Parent.Parent.Cycle
-	local AImbot = script.Parent.Parent.Parent.FrameAimbot
-	local CycleAimbot = script.Parent.Parent.Parent.FrameAimbot.Cycle
-	local CycleAimbot2 = script.Parent.Parent.Parent.FrameAimbot.Cycle2
-	local CycleAimbot3 = script.Parent.Parent.Parent.FrameAimbot.Cycle3
-	local CycleAimbot4 = script.Parent.Parent.Parent.FrameAimbot.Cycle4
-	local CycleAimbot5 = script.Parent.Parent.Parent.FrameAimbot.Cycle6
-	local CycleAimbot6 = script.Parent.Parent.Parent.FrameAimbot.Cycle5
-	local CycleAimbot7 = script.Parent.Parent.Parent.FrameAimbot.Cycle7
-	local target = script.Parent.Parent.Parent.Target
-	local target2 = script.Parent.Parent.Parent.FrameBaseTarget
-	local on2 = 0
-	local open = 0
-	
-	script.Parent.MouseButton1Click:Connect(function()	
-		if on2 == 0 then
-			AImbot.Visible = true
-			on2 = 1
-			if iss.Text == "Cycle" then
-				CycleAimbot2.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot3.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot4.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot5.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot6.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot7.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
-				on2 = 0
-			end
-	
-			
-			if iss.Text == "Cycle (x2)" then
-				CycleAimbot.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot7.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot6.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot3.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot4.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot5.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot2.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
-				on2 = 0
-			end
-			
-			if iss.Text == "Near crosshair" then
-				CycleAimbot2.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot7.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot.TextColor3  = Color3.new(1,1,1)
-				CycleAimbot6.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot5.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot3.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
-				CycleAimbot4.TextColor3 = Color3.new(1,1,1)
-				on2 = 0
-			end
-			
-			if iss.Text == "Highest domage" then
-				CycleAimbot2.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot7.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot3.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot5.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot6.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot4.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot4.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
-				on2 = 0
-			end
-			
-			if iss.Text == "Lowest Ping" then
-				CycleAimbot2.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot3.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot6.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot5.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot7.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot4.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot5.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
-				on2 = 0
-			end
-			
-			if iss.Text == "Best K/D ratio" then
-				CycleAimbot2.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot3.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot4.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot5.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot7.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot6.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
-				on2 = 0
-			end
-			
-			
-			if iss.Text == "Best hit chance" then
-				CycleAimbot2.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot3.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot4.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot6.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot5.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot.TextColor3 = Color3.new(1,1,1)
-				CycleAimbot7.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
-				on2 = 0
-			end
-			
-		else
-			
-			iss.TextColor3 = Color3.new	(1, 1, 1)
-			AImbot.Visible = true
-			on2 = 0
-		end
-		
-	end)
-end
-coroutine.wrap(BHFVGRA_fake_script)()
-local function EIKJ_fake_script() -- ImageButton_2.LocalScript 
-	local script = Instance.new('LocalScript', ImageButton_2)
-
-	local iss = script.Parent.Parent.Head
-	local Target = script.Parent.Parent.Parent.FrameTarget
-	local Head = script.Parent.Parent.Parent.FrameTarget.Head
-	local Chest = script.Parent.Parent.Parent.FrameTarget.Chest
-	local Legs = script.Parent.Parent.Parent.FrameTarget.Legs
-	local Arms = script.Parent.Parent.Parent.FrameTarget.Arms
-	local Stomach = script.Parent.Parent.Parent.FrameTarget.Stomach
-	local Feet = script.Parent.Parent.Parent.FrameTarget.Feet
-	
-	local on2 = 0
-	-- Variables
-	
-	
-	
-	
-	script.Parent.MouseButton1Click:Connect(function()	
-		if on2 == 0 then
-			Target.Visible = true
-			on2 = 1
-			if iss.Text == "Head" then
-				Head.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
-				Chest.TextColor3 = Color3.new(1,1,1)
-				Legs.TextColor3 = Color3.new(1,1,1)
-				Arms.TextColor3 = Color3.new(1,1,1)
-				Stomach.TextColor3 = Color3.new(1,1,1)
-				Feet.TextColor3 = Color3.new(1,1,1)
-				on2 = 0
-				
-			end
-			if iss.Text == "Chest" then
-				Chest.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
-				Head.TextColor3 = Color3.new(1,1,1)
-				Legs.TextColor3 = Color3.new(1,1,1)
-				Arms.TextColor3 = Color3.new(1,1,1)
-			 Stomach.TextColor3 = Color3.new(1,1,1)
-				Feet.TextColor3 = Color3.new(1,1,1)
-				on2 = 0
-			end
-			
-			if iss.Text ==  "Legs" then
-				Legs.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
-				Head.TextColor3 = Color3.new(1,1,1)
-		       Chest.TextColor3 = Color3.new(1,1,1)
-				Arms.TextColor3 = Color3.new(1,1,1)
-			 Stomach.TextColor3 = Color3.new(1,1,1)
-				Feet.TextColor3 = Color3.new(1,1,1)
-				on2 = 0
-			end
-			
-			if iss.Text == "Arms" then
-				Arms.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
-				Head.TextColor3 = Color3.new(1,1,1)
-				Chest.TextColor3 = Color3.new(1,1,1)
-				Legs.TextColor3 = Color3.new(1,1,1)
-				Stomach.TextColor3 = Color3.new(1,1,1)
-				Feet.TextColor3 = Color3.new(1,1,1)
-				on2 = 0
-			end
-			if iss.Text == "Stomach" then
-				Stomach.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
-				Head.TextColor3 = Color3.new(1,1,1)
-				Chest.TextColor3 = Color3.new(1,1,1)
-				Arms.TextColor3 = Color3.new(1,1,1)
-				Legs.TextColor3 = Color3.new(1,1,1)
-				Feet.TextColor3 = Color3.new(1,1,1)
-				on2 = 0
-			end
-			if iss.Text == "Feet" then
-				Feet.TextColor3 = Color3.new(0.564706, 0.733333, 0.12549)
-				
-				Head.TextColor3 = Color3.new(1,1,1)
-				Chest.TextColor3 = Color3.new(1,1,1)
-				Arms.TextColor3 = Color3.new(1,1,1)
-				Legs.TextColor3 = Color3.new(1,1,1)
-				Stomach.TextColor3 = Color3.new(1,1,1)
-				on2 = 0
-			end
-		else
-			iss.TextColor3 = Color3.new	(1, 1, 1)
-			Target.Visible = true
-			on2 = 0
-		end 
-	end)
-end
-coroutine.wrap(EIKJ_fake_script)()
-local function TYGSM_fake_script() -- Arms.LocalScript 
-	local script = Instance.new('LocalScript', Arms)
-
-	local lmao4 = script.Parent.Parent.Parent.FrameBaseTarget.Head
-	local frameIss4 = script.Parent.Parent.Parent.FrameTarget
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		lmao4.Text = "Arms"
-		frameIss4.Visible = false
-	end)
-end
-coroutine.wrap(TYGSM_fake_script)()
-local function UOUGT_fake_script() -- Chest.LocalScript 
-	local script = Instance.new('LocalScript', Chest)
-
-	local lmao2 = script.Parent.Parent.Parent.FrameBaseTarget.Head
-	local frameIss2 = script.Parent.Parent.Parent.FrameTarget
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		lmao2.Text = "Chest"
-		frameIss2.Visible = false
-	end)
-end
-coroutine.wrap(UOUGT_fake_script)()
-local function BVMJ_fake_script() -- Feet.LocalScript 
-	local script = Instance.new('LocalScript', Feet)
-
-	local lmao6 = script.Parent.Parent.Parent.FrameBaseTarget.Head
-	local frameIss6 = script.Parent.Parent.Parent.FrameTarget
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		lmao6.Text = "Feet"
-		frameIss6.Visible = false
-	end)
-end
-coroutine.wrap(BVMJ_fake_script)()
-local function VMPDNO_fake_script() -- Head_2.LocalScript 
-	local script = Instance.new('LocalScript', Head_2)
-
-	local lmao = script.Parent.Parent.Parent.FrameBaseTarget.Head
-	local frameIss = script.Parent.Parent.Parent.FrameTarget
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		lmao.Text = "Head"
-		frameIss.Visible = false
-	end)
-end
-coroutine.wrap(VMPDNO_fake_script)()
-local function HRAEL_fake_script() -- Legs.LocalScript 
-	local script = Instance.new('LocalScript', Legs)
-
-	local lmao6 = script.Parent.Parent.Parent.FrameBaseTarget.Head
-	local frameIss6 = script.Parent.Parent.Parent.FrameTarget
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		lmao6.Text = "Legs"
-		frameIss6.Visible = false
-	end)
-end
-coroutine.wrap(HRAEL_fake_script)()
-local function XDRO_fake_script() -- Stomach.LocalScript 
-	local script = Instance.new('LocalScript', Stomach)
-
-	local lmao3 = script.Parent.Parent.Parent.FrameBaseTarget.Head
-	local frameIss3 = script.Parent.Parent.Parent.FrameTarget
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		lmao3.Text = "Stomach"
-		frameIss3.Visible = false
-	end)
-end
-coroutine.wrap(XDRO_fake_script)()
-local function CORA_fake_script() -- AimbotGui.LocalScript 
-	local script = Instance.new('LocalScript', AimbotGui)
-
-	local AImbot = script.Parent.FrameAimbot
-	local target = script.Parent.Target
-	local target2 = script.Parent.FrameBaseTarget
-	local target3 = script.Parent.FrameTarget
-	while true do wait()
-	if AImbot.Visible == true then
-			target.Visible = false
-			target2.Visible = false
-			target3.Visible = false
-		else
-			target.Visible = true
-			target2.Visible = true
-				end
-	end
-	
-end
-coroutine.wrap(CORA_fake_script)()
+coroutine.wrap(COAODS_fake_script)()
